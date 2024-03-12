@@ -14,3 +14,7 @@
 ### feat: Adição do css da página
 
     Nesse commit é realizado a adição do css da página. Ele é bem básico. Apenas cria umas margens e define uma fonte.
+
+### feat: Adição do java script da página
+
+    Nesse commit é adicionado o java script do frontend. Nele é adicionado um event listener no botão de salvar, que, futuramente, ira mandar os dados para o backend através da rota contacts com o método POST. Além disso, foi configurado para, ao a tela carregar, renderizar os contatos salvos. 
