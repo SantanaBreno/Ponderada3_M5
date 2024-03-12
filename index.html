@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meus Contatos</h1>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="phone" placeholder="phone" required>
+        <label for="familia">É familia?</label>
+        <select id="'familia" name="familia">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+        <button type="submit">Salvar</button>
+    </form>
+    <ul id="contactList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
