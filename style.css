@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+input, button, select {
+    margin-bottom: 10px;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
