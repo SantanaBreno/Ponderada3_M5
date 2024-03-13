@@ -22,3 +22,7 @@
 ### feat: Adição do backend
 
    Nesse commit é feito a criação do backend. Ele é simples, tem apenas um arquivo chamado server.js que criar as requisições post e get para o banco.
+
+### feat: Mudança do front para react
+
+   Eu decidi mudar o front para react, pois o estático era muito complicado para acessar na instância.

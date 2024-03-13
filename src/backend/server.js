@@ -3,9 +3,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { Pool } = require('pg');
 
+const cors = require('./middleware/cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
+
+app.use(cors);
 
 const connectionString = `postgresql://postgres:ponderada123@db-ponderada.chg2sookcwy3.us-east-1.rds.amazonaws.com:5432/db-ponderada`;
 
