@@ -26,3 +26,7 @@
 ### feat: Mudança do front para react
 
    Eu decidi mudar o front para react, pois o estático era muito complicado para acessar na instância.
+
+### update: Arrumando query sql no server
+
+   Arrumei as colunas da query de insert
