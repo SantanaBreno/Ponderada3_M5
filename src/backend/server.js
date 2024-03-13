@@ -25,7 +25,7 @@ app.post('/contacts', async (req, res) => {
     const { name, phone, family } = req.body;
 
     try{
-        const query = 'INSERT INTO contatos (name, phone, familia) VALUES ($1, $2, $3) RETURNING *';
+        const query = 'INSERT INTO contatos (name, phone, familia) VALUES ($1, $2, $3) RETURNING *;';
         values = [name, phone, family];
 
         const result = await pool.query(query, values);
@@ -38,7 +38,7 @@ app.post('/contacts', async (req, res) => {
 
 app.get('/contacts', async (req, res) => {
     try {
-        const query = 'SELECT * FROM contatos';
+        const query = 'SELECT * FROM contatos;';
         const result = await pool.query(query);
         res.json(result.rows);
     } catch (error) {
