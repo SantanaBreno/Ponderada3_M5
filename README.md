@@ -34,3 +34,5 @@
 ### fix: Arrumando o código no geral
 
    Ajustei o objeto de conexão com o banco para se conectar ao banco da rds.
+
+### Update: Arrumando a conexão com o banco
