@@ -9,15 +9,15 @@ const Container = styled.div`
 
 
 function ContactForm({ addContact }) {
-  const [name, setName] = useState('');
+  const [nome, setNome] = useState('');
   const [phone, setPhone] = useState(0);
-  const [isFamily, setIsFamily] = useState(false);
+  const [familia, setIsFamily] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !phone) return;
-    addContact({ name, phone, isFamily });
-    setName('');
+    if (!nome || !phone) return;
+    addContact({ nome, phone, familia });
+    setNome('');
     setPhone('');
     setIsFamily(false);
   };
@@ -27,9 +27,9 @@ function ContactForm({ addContact }) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        placeholder="Nome"
+        value={nome}
+        onChange={(e) => setNome(e.target.value)}
         required
       />
       <input
@@ -43,7 +43,7 @@ function ContactForm({ addContact }) {
       <select
         id="familia"
         name="familia"
-        value={isFamily}
+        value={familia}
         onChange={(e) => setIsFamily(e.target.value === 'true')}
         required
       >

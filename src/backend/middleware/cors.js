@@ -1,6 +1,6 @@
 module.exports = (request, response, next) => {
     // Define o cabeçalho Access-Control-Allow-Origin para permitir requisições da origem específica
-   response.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+   response.setHeader('Access-Control-Allow-Origin', '*');
    // Define os métodos HTTP permitidos
    response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
    // Define os cabeçalhos permitidos na requisição

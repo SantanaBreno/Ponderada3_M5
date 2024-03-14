@@ -29,4 +29,8 @@
 
 ### update: Arrumando query sql no server
 
-   Arrumei as colunas da query de insert
+   Arrumei as colunas da query de insert.
+
+### fix: Arrumando o código no geral
+
+   Ajustei o objeto de conexão com o banco para se conectar ao banco da rds.

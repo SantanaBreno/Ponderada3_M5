@@ -5,7 +5,7 @@ function ContactList({ contacts }) {
     <ul>
       {contacts.map((contact, index) => (
         <li key={index}>
-          {contact.name} - {contact.phone} - {contact.family ? 'Familia' : 'Amigo'}
+          {contact.nome} - {contact.phone} - {contact.familia ? 'Familia' : 'Amigo'}
         </li>
       ))}
     </ul>
