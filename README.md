@@ -1,9 +1,32 @@
 # Meus Contatos
 
+   Meus contatos é um projeto que permite a criação e listagem de contatos. O backend e o frontend rodam em uma EC2 comunicando-se com um banco de dados na RDS.
+
 ## Descrição
 
    Meus Contatos é uma aplicação em que posso salvar meus contatos e indicar sesão familiares ou não.
 
+
+## Tecnologias
+
+   - frontend: react;
+   - backend: Node.js e express;
+   - banco de dados: postgres;
+   - Amazon EC2 e RDS.
+
+# Video demonstração
+
+   link: https://drive.google.com/drive/folders/15V49G5Xp9jKcNHAD3CJj-AYKJMquyC4b?usp=sharing
+
+
+## Script de criação do banco
+
+   CREATE TABLE contatos (
+      id SERIAL PRIMARY KEY,
+      nome VARCHAR,
+      phone INT,
+      familia BOOLEAN
+   );
 
 ## Commits e suas descrições 
 
@@ -36,3 +59,5 @@
    Ajustei o objeto de conexão com o banco para se conectar ao banco da rds.
 
 ### Update: Arrumando a conexão com o banco
+
+   Arrumei a url a variável de ambiente host que estava errada.
